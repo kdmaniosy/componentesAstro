@@ -1,0 +1,19 @@
+---
+const imagenes = [
+    'https://th.bing.com/th/id/OIP.eZg5JUz9qrV7T10oY93efQAAAA?rs=1&pid=ImgDetMain',
+    'https://i.pinimg.com/originals/33/da/fb/33dafbaff82421afef2718827edc3cde.jpg',
+    'https://i.pinimg.com/originals/06/be/c2/06bec211319ed0222803d840f126a093.jpg',
+    'https://i.pinimg.com/236x/77/f8/15/77f8158722781bbb7c73db08db79ba0d.jpg',
+    'https://i.pinimg.com/736x/83/41/08/834108c2316dbb0b6cf860abd1cde45e.jpg',
+    'https://i.pinimg.com/736x/e3/4f/f4/e34ff4c8e8a85325f42d588f8bd845c1.jpg'
+];
+---
+
+<div class="w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
+    {imagenes.map((src,index) => (
+        <div key={index} class="overflow-hidden rounded-lg shadow-md">
+            <img src={src} alt={`Imagen ${index+1}`} class="w-full h-full object-cover"/>
+        </div>
+    ))}
+   
+</div>

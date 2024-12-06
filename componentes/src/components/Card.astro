@@ -1,0 +1,13 @@
+---
+
+const {title, content, img} = Astro.props;
+
+---
+
+<div class="bg-slate-100 w-full max-w-[200px] h-[300px] mt-5 ml-4 text-center rounded-lg">
+    <h1 class="text-2xl font-semibold font-serif ">{title}</h1>
+    <p class="font-serif mt-3">{content}</p>
+    <img class="rounded size-[150px] mx-auto mt-5" src={img} alt="">    
+</div>
+
+

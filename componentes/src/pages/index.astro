@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Galeria from '../components/Galeria.astro';
+import Modal from '../components/Modal.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<div class="flex">
+		<Card title="Kim Namjoon" content="Lider de la banda BTS" img="https://st1.bollywoodlife.com/wp-content/uploads/2022/11/NAMJOONNN.png?impolicy=Medium_Widthonly&w=1280&h=900"></Card>
+		<Card title="Kim Seokjin" content="Vocalista de la banda BTS" img="https://i.pinimg.com/originals/05/25/b5/0525b5ff91b16d409c240b83ec4de199.jpg"></Card>
+		<Card title="Min Yoongi" content="Rapero y compositor de la banda BTS" img="https://i.pinimg.com/originals/c0/4c/3d/c04c3d2db93a086204b2ef657047a31c.jpg"></Card>
+		<Card title="Jung Hoseok" content="Rapero y bailarín de la banda BTS" img="https://i.pinimg.com/736x/68/a3/3b/68a33b06018d98e1b08e1ace1838a7fc.jpg"></Card>
+		<Card title="Park Jimin" content="Vocalista de la banda BTS" img="https://i.pinimg.com/736x/fe/b8/c2/feb8c222d3155aa288ea73023be55915.jpg"></Card>
+		<Card title="Kim Taehyung" content="Vocalista de la banda BTS" img="https://th.bing.com/th/id/OIP.OB_thKimwXV_gvQgXtTT5QHaHa?rs=1&pid=ImgDetMain"></Card>
+	</div>
+
+	<Card title="Jeon Jungkook" content="Vocalista guapote de BTS" img="https://i.pinimg.com/originals/ed/26/a6/ed26a694805687fdb17f6ee8561d4763.jpg"></Card>
+
+	<Galeria></Galeria>
+
+	<Modal></Modal>
+	
+</Layout>

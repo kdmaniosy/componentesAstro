@@ -1,0 +1,16 @@
+---
+let modalOpen = false;
+function toggleModal(){
+    modalOpen = !modalOpen;
+}
+---
+
+<div class="mt-12">
+    <button class="w-full max-w-[100px] bg-red-600 rounded mx-4 my-4 text-white font-semibold" onclick={toggleModal}>
+        Eliminar
+    </button>
+</div>
+
+{modalOpen && (
+    <div class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">Hola</div>
+)}
